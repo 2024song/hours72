@@ -1,0 +1,72 @@
+@charset "UTF-8";
+.fakeimg {
+    height: 100px;
+    background: #aaa;
+  }
+  .navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  .position-relative {
+  position: relative;
+}
+
+ .countdown-container {
+    position: relative; /* 기존 클래스의 위치 스타일을 유지 */
+  }
+  .countdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 중앙에 요소들을 정렬 */
+  }
+  .time-labels, .time-values {
+    display: flex;
+    justify-content: space-around; /* 요소를 공간을 균등 분할하여 배열 */
+    width: 100%; /* 컨테이너의 전체 너비 사용 */
+  }
+  .time-labels {
+    margin-bottom: 10px; /* 레이블과 값 사이에 조금의 공간을 더함 */
+  }
+
+  .video-container {
+    position: relative;
+    width: 900px; /* 동영상의 너비와 일치 */
+    height: 506; /* 동영상의 높이와 일치 */
+    z-index: 1; /* 동영상 컨테이너의 z-index 설정 */
+    margin: 0 auto;
+  }
+
+.video-container iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+ .video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* 글자 색상 */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* 오버레이의 배경 색상과 투명도 */
+  z-index: 2;
+}
+
+.video-overlay h1,
+.video-overlay h2 {
+  font-size: 48px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+}
